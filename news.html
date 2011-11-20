@@ -1,0 +1,18 @@
+---
+layout: default
+title: Meld - News
+---
+
+<div id="content" class="container_12">
+
+  <div class="grid_10 prefix_1 suffix 1">
+    {% for post in site.posts limit: 5 %}
+      <h2>{{ post.title }} &mdash; {{ post.date | date_to_string }}</h2>
+      <div class="news">
+      {{ post.content }}
+      </div>
+    {% endfor %}
+  </div>
+  <div class="clear"></div>
+
+</div>

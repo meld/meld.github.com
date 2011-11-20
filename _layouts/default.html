@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>{{ page.title }}</title>
+   <meta name="author" content="Kai Willadsen" />
+
+   <!-- 960 CSS -->
+   <link rel="stylesheet" href="/css/reset.css" />
+   <link rel="stylesheet" href="/css/text.css" />
+   <link rel="stylesheet" href="/css/960_12_col.css" />
+
+   <!-- Cantarell CSS from Google Web fonts -->
+   <link href='http://fonts.googleapis.com/css?family=Cantarell:400,700' rel='stylesheet' type='text/css'>
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+
+<div class="site container_12">
+
+  <div class="title grid_10 push_1">
+    <a href="/">
+    <img src="/images/meld-96.png"/>
+    <h1>Meld</h1>
+    </a>
+  </div>
+  <div class="clear"></div>
+
+  <div class="grid_10 push_1" id="navbar">
+    <ul>
+      <li><a href="/">Get it</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="development.html">Development</a></li>
+    </ul>
+  </div>
+  <div class="clear"></div>
+
+  {{ content }}
+
+  <div class="grid_10 push_1" id="footer">
+    <div class="grid_5 alpha" style="text-align: right">
+      <p>
+        Copyright &copy;2011 Kai Willadsen
+      </p>
+    </div>
+    <div class="grid_5 omega">
+      <p>
+        Hosted by <a href="http://github.com/">GitHub</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

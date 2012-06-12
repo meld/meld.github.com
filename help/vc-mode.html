@@ -1,0 +1,212 @@
+---
+layout: help
+title: Meld - Help
+---
+
+<div class="headbar"><div class="linktrails"><div class="linktrail">
+<a class="linktrail" href="index.html">Meld Help</a> › <a class="linktrail" href="index.html#vc-mode">Using Meld with Version Control</a> » </div></div></div>
+<div class="body">
+<div class="header"><h1 class="title">Viewing version-controlled files</h1></div>
+<div class="contents"><p class="p">
+<span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span> integrates with <span xmlns:e="http://projectmallard.org/experimental/" class=" link"><a href="vc-supported.html" title="">many version
+control systems</a></span> to let you review local changes and perform
+simple version control tasks. You can start a new version control
+comparison by selecting the
+<span xmlns:e="http://projectmallard.org/experimental/" class=" guiseq"><span class=" gui">File</span> ▸ <span class=" gui">New...</span></span>
+menu item, and clicking on the <span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Version Control</span>
+tab.
+</p></div>
+<div class="section" id="">
+<div class="header"><h2 class="title">Version control comparisons</h2></div>
+<div class="contents">
+<p class="p first-child">
+Version control comparisons show the differences between the contents
+of your folder and the current repository version. Each file in your
+local copy has a <span xmlns:e="http://projectmallard.org/experimental/" class=" link"><a href="#vc-state" title="">state</a></span> that indicates
+how it differs from the repository copy.
+</p>
+<p class="p">
+If you want to look at a particular file's differences, you can select
+it and press <span xmlns:e="http://projectmallard.org/experimental/" class=" key">Enter</span>, or double-click the file to start a
+<span xmlns:e="http://projectmallard.org/experimental/" class=" link"><a href="file-mode.html" title="">file comparison</a></span>. You can also interact
+with your version control system using the
+<span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Changes</span> menu.
+</p>
+</div>
+</div>
+<div class="section" id="vc-state">
+<div class="header"><h2 class="title">Version control states</h2></div>
+<div class="contents">
+<p class="p first-child">
+Each file or folder in a version control comparison has a <span xmlns:e="http://projectmallard.org/experimental/" class=" em">state</span>,
+obtained from the version control system itself. <span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span> maps
+these different states into a standard set of very similar concepts.
+As such, <span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span> might use slightly different names for states
+than your version control system does. The possible states are:
+</p>
+<div class="table"><table class="table" style="border-top-style: solid;border-bottom-style: solid;">
+<thead><tr>
+<td><p class="p first-child">State</p></td>
+<td><p class="p first-child">Appearance</p></td>
+<td><p class="p first-child">Meaning</p></td>
+</tr></thead>
+<tbody>
+<tr>
+<td><p class="p first-child">Same</p></td>
+<td>
+<p class="p first-child">
+        Normal font
+
+        </p>
+</td>
+<td>
+<p class="p first-child">
+        The file/folder is the same as the repository version.
+        </p>
+</td>
+</tr>
+<tr>
+<td><p class="p first-child">Modified</p></td>
+<td>
+<p class="p first-child">
+        Red and bold
+
+        </p>
+</td>
+<td>
+<p class="p first-child">
+        This file is different to the repository version.
+        </p>
+</td>
+</tr>
+<tr>
+<td><p class="p first-child">New</p></td>
+<td>
+<p class="p first-child">
+        Green and bold
+
+        </p>
+</td>
+<td>
+<p class="p first-child">
+        This file/folder is new, and is scheduled to be added to
+        the repository.
+        </p>
+</td>
+</tr>
+<tr>
+<td><p class="p first-child">Removed</p></td>
+<td>
+<p class="p first-child">
+        Red bold text with a line through the middle
+
+        </p>
+</td>
+<td>
+<p class="p first-child">
+        This file/folder existed, but is scheduled to be removed from
+        the repository.
+        </p>
+</td>
+</tr>
+<tr>
+<td><p class="p first-child">Conflict</p></td>
+<td>
+<p class="p first-child">
+        Bright red bold text
+
+        </p>
+</td>
+<td>
+<p class="p first-child">
+        When trying to merge with the repository, the differences between
+        the local file and the repository could not be resolved, and the
+        file is now in conflict with the repository contents
+        </p>
+</td>
+</tr>
+<tr>
+<td><p class="p first-child">Missing</p></td>
+<td>
+<p class="p first-child">
+        Blue bold text with a line through the middle
+
+        </p>
+</td>
+<td>
+<p class="p first-child">
+        This file/folder should be present, but isn't.
+        </p>
+</td>
+</tr>
+<tr>
+<td><p class="p first-child">Ignored</p></td>
+<td>
+<p class="p first-child">
+        Greyed out text
+
+        </p>
+</td>
+<td>
+<p class="p first-child">
+        This file/folder has been explicitly ignored (e.g., by an entry
+        in <span xmlns:e="http://projectmallard.org/experimental/" class=" file">.gitignore</span>) and is not being tracked by version
+        control.
+        </p>
+</td>
+</tr>
+<tr>
+<td><p class="p first-child">Non VC</p></td>
+<td>
+<p class="p first-child">
+        Greyed out text
+
+        </p>
+</td>
+<td>
+<p class="p first-child">
+        This file is not in the version control system; it is only in
+        the local copy.
+        </p>
+</td>
+</tr>
+<tr>
+<td><p class="p first-child">Error</p></td>
+<td>
+<p class="p first-child">
+        Bright red with a yellow background and bold
+
+        </p>
+</td>
+<td>
+<p class="p first-child">
+        The version control system has reported a problem with this file.
+        </p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="section" id="vc-state-filtering">
+<div class="header"><h2 class="title">Version control state filtering</h2></div>
+<div class="contents"><p class="p first-child">
+Most often, you will only want to see files that are identified as being
+in some way different; this is the default setting in <span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span>.
+You can change which file states you see by using the
+<span xmlns:e="http://projectmallard.org/experimental/" class=" guiseq"><span class=" gui">View</span> ▸ <span class=" gui">Version Status</span></span>
+menu, or by clicking the corresponding <span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Modified</span>,
+<span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Normal</span>, <span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Non VC</span> and
+<span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Ignored</span> buttons on the toolbar.
+</p></div>
+</div>
+<div class="section autolinkssection">
+<div class="header"><h2 class="title">Further Reading</h2></div>
+<div class="autolinks">
+<div class="title"><span>More About</span></div>
+<ul><li class="autolink"><a href="index.html#vc-mode">Using Meld with Version Control</a></li></ul>
+</div>
+</div>
+</div>
+<div class="footbar"><div class="copyrights"><div class="copyright">© 2012 Kai Willadsen</div></div></div>
+

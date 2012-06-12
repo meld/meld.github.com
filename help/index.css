@@ -1,0 +1,371 @@
+@charset "UTF-8";
+#help-content {
+  border-left: solid 1px #e0e0df;
+  border-right: solid 1px #e0e0df;
+  background-color: #ffffff; }
+
+#help-content div.body {
+  border: none !important; }
+
+#help-content div.headbar {
+  margin: 10px !important; }
+
+#help-content div.footbar {
+  margin: 10px !important; }
+
+#help-content .title {
+  line-height: 1em; }
+#help-content h1 {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black; }
+#help-content h2 {
+  font-family: sans-serif;
+  color: black; }
+#help-content html {
+  height: 100%; }
+#help-content body {
+  margin: 0px;
+  background-color: #f9f9f6;
+  padding: 12px;
+  min-height: 100%;
+  direction: ltr; }
+#help-content ul, #help-content ol, #help-content dl, #help-content dd {
+  margin: 0; }
+#help-content div, #help-content pre, #help-content p, #help-content li, #help-content dt {
+  margin: 1em 0 0 0;
+  padding: 0; }
+#help-content .first-child {
+  margin-top: 0; }
+#help-content li.condensed {
+  margin-top: 0.2em; }
+#help-content a {
+  text-decoration: none;
+  color: #1f609f; }
+#help-content a:visited {
+  color: #9f1f6f; }
+#help-content a:hover {
+  text-decoration: underline; }
+#help-content div.headbar {
+  margin: 0;
+  max-width: 48em; }
+#help-content div.footbar {
+  margin: 0;
+  max-width: 48em; }
+#help-content div.body {
+  margin: 0;
+  padding: 1em;
+  max-width: 48em;
+  min-height: 20em;
+  -moz-border-radius: 6px;
+  border: solid 1px #e0e0df;
+  background-color: #ffffff; }
+#help-content div.navbar {
+  margin: 0;
+  float: right; }
+#help-content a.navbar-prev::before {
+  content: '◀  ';
+  color: #3f3f3f; }
+#help-content a.navbar-next::after {
+  content: '  ▶';
+  color: #3f3f3f; }
+#help-content div.copyrights {
+  text-align: center;
+  color: #3f3f3f; }
+#help-content div.section {
+  margin-top: 2.4em;
+  clear: both; }
+#help-content div.section div.section {
+  margin-top: 1.72em;
+  margin-left: 1.72em; }
+#help-content div.section div.section div.section {
+  margin-top: 1.44em; }
+#help-content div.header {
+  margin: 0;
+  color: #3f3f3f;
+  border-bottom: solid 1px #e0e0df; }
+#help-content h1 {
+  font-size: 1.44em;
+  margin: 0; }
+#help-content h2, #help-content h3, #help-content h4, #help-content h5, #help-content h6, #help-content h7 {
+  font-size: 1.2em;
+  margin: 0; }
+#help-content table {
+  border-collapse: collapse; }
+#help-content div.autolinks ul {
+  margin: 0;
+  padding: 0; }
+#help-content div.autolinks div.title {
+  margin: 1em 0 0 1em; }
+#help-content div.autolinks div.title span {
+  border-bottom: solid 1px #e0e0df; }
+#help-content li.autolink {
+  margin: 0.5em 0 0 0;
+  padding: 0 0 0 1em;
+  list-style-type: none; }
+#help-content div.linktrails {
+  margin: 0; }
+#help-content div.linktrail {
+  font-size: 0.83em;
+  margin: 0 1px 0.2em 1px;
+  padding-left: 1.2em;
+  color: #3f3f3f; }
+#help-content table.twocolumn {
+  width: 100%; }
+#help-content td.twocolumnleft {
+  width: 48%;
+  vertical-align: top;
+  padding: 0;
+  margin: 0; }
+#help-content td.twocolumnright {
+  width: 52%;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  padding-left: 1em; }
+#help-content div.linkdiv div.title {
+  font-size: 1em;
+  color: inherit; }
+#help-content div.linkdiv {
+  margin: 0;
+  padding: 0.5em;
+  -moz-border-radius: 6px;
+  border: solid 1px #ffffff; }
+#help-content div.linkdiv:hover {
+  border-color: #c0c9ff;
+  background-color: #f0f9ff; }
+#help-content div.linkdivsep {
+  margin: 0.5em;
+  list-style-type: none;
+  max-width: 24em;
+  border-bottom: solid 1px #e0e0df; }
+#help-content div.title {
+  margin: 0 0 0.2em 0;
+  font-weight: bold;
+  color: #3f3f3f; }
+#help-content div.desc {
+  margin: 0 0 0.2em 0; }
+#help-content div.desc-listing, #help-content div.desc-synopsis {
+  font-style: italic; }
+#help-content div.desc-figure {
+  margin: 0.2em 0 0 0; }
+#help-content pre.code {
+  /* FIXME: In RTL locales, we really want to align this left, but the watermark
+   * we have is designed to fit in the top right corner.  Either we need a new
+   * watermark, or we need a separate RTL version.
+   */
+  background: url("watermark-code.png") no-repeat top right;
+  border: solid 2px #e0e0df;
+  padding: 0.5em 1em 0.5em 1em; }
+#help-content div.example {
+  border-left: solid 4px #e0e0df;
+  padding-left: 1em; }
+#help-content div.figure {
+  margin-left: 1.72em;
+  padding: 4px;
+  color: #3f3f3f;
+  border: solid 1px #e0e0df;
+  background-color: #f9f9f6; }
+#help-content div.figure-contents {
+  margin: 0;
+  padding: 0.5em 1em 0.5em 1em;
+  text-align: center;
+  color: #000000;
+  border: solid 1px #e0e0df;
+  background-color: #ffffff; }
+#help-content div.listing-contents {
+  margin: 0;
+  padding: 0; }
+#help-content div.note {
+  padding: 0.5em 6px 0.5em 6px;
+  border-top: solid 1px #ffc0c0;
+  border-bottom: solid 1px #ffc0c0;
+  background-color: #fffff0; }
+#help-content div.note-inner {
+  margin: 0;
+  padding-left: 60px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  min-height: 48px;
+  background-image: url("admon-note.png"); }
+#help-content div.note-bug div.note-inner {
+  background-image: url("admon-bug.png"); }
+#help-content div.note-important div.note-inner {
+  background-image: url("admon-important.png"); }
+#help-content div.note-tip div.note-inner {
+  background-image: url("admon-tip.png"); }
+#help-content div.note-warning div.note-inner {
+  background-image: url("admon-warning.png"); }
+#help-content div.note-contents {
+  margin: 0;
+  padding: 0; }
+#help-content div.quote-inner {
+  margin: 0;
+  background-image: url("watermark-blockquote-201C.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 0.5em;
+  padding-left: 4em; }
+#help-content div.title-quote {
+  margin-left: 4em; }
+#help-content blockquote {
+  margin: 0;
+  padding: 0; }
+#help-content div.cite-comment {
+  margin-top: 0.5em;
+  color: #3f3f3f; }
+#help-content div.cite-quote {
+  margin-top: 0.5em;
+  color: #3f3f3f; }
+#help-content div.cite-quote::before {
+  content: '― '; }
+#help-content pre.screen {
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: #f9f9f6;
+  border: solid 2px #e0e0df; }
+#help-content div.synopsis-contents {
+  margin: 0;
+  padding: 0.5em 1em 0.5em 1em;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+  border-color: #c0c9ff;
+  background-color: #f9f9f6; }
+#help-content div.synopsis pre.code {
+  background: none;
+  border: none;
+  padding: 0; }
+#help-content div.list-contents {
+  margin: 0;
+  padding: 0; }
+#help-content div.title-list {
+  margin-bottom: 0.5em; }
+#help-content ol.list, #help-content ul.list {
+  margin: 0;
+  padding: 0; }
+#help-content li.item-list {
+  margin-left: 1.44em; }
+#help-content div.steps-contents {
+  margin: 0;
+  padding: 0.5em 1em 0.5em 1em;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+  border-color: #c0c9ff;
+  background-color: #fffff0; }
+#help-content div.steps-contents div.steps-contents {
+  padding: 0;
+  border: none;
+  background-color: none; }
+#help-content ol.steps, #help-content ul.steps {
+  margin: 0;
+  padding: 0; }
+#help-content li.item-steps {
+  margin-left: 1.44em; }
+#help-content div.terms-contents {
+  margin: 0; }
+#help-content dt.item-next {
+  margin-top: 0; }
+#help-content dd.item-terms {
+  margin-top: 0.2em;
+  margin-left: 1.44em; }
+#help-content ul.tree {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+#help-content li.item-tree {
+  margin: 0;
+  padding: 0; }
+#help-content div.item-tree {
+  margin: 0;
+  padding: 0; }
+#help-content ul.tree ul.tree {
+  margin-left: 1.44em; }
+#help-content div.tree-lines ul.tree {
+  margin-left: 0; }
+#help-content table.table {
+  border-collapse: collapse;
+  border-color: #555753;
+  border-width: 1px; }
+#help-content table.table td {
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  border-color: #888a85;
+  border-width: 1px;
+  vertical-align: top; }
+#help-content span.app {
+  font-style: italic; }
+#help-content span.cmd {
+  font-family: monospace;
+  background-color: #f9f9f6;
+  padding: 0 0.2em 0 0.2em; }
+#help-content span.code {
+  font-family: monospace; }
+#help-content span.em {
+  font-style: italic; }
+#help-content span.email {
+  color: red; }
+#help-content span.file {
+  font-family: monospace; }
+#help-content span.gui, #help-content span.guiseq {
+  color: #3f3f3f; }
+#help-content span.input {
+  font-family: monospace; }
+#help-content span.hi {
+  background-color: #fffff0; }
+#help-content span.key {
+  color: #3f3f3f;
+  border: solid 1px #e0e0df;
+  padding: 0 0.2em 0 0.2em; }
+#help-content span.keyseq {
+  color: #3f3f3f; }
+#help-content span.output {
+  font-family: monospace; }
+#help-content pre.screen span.output {
+  color: #3f3f3f; }
+#help-content pre.screen span.output-error {
+  color: #ff0000; }
+#help-content pre.screen span.output-prompt {
+  font-weight: bold; }
+#help-content span.sys {
+  font-family: monospace; }
+#help-content span.var {
+  font-style: italic; }
+#help-content div.version {
+  position: absolute;
+  right: 12px;
+  opacity: 0.2;
+  margin-top: -1em;
+  padding: 0.5em 1em 0.5em 1em;
+  max-width: 24em;
+  -moz-border-radius: 6px;
+  border: solid 1px #e0e0df;
+  background-color: #fffff0; }
+#help-content div.version:hover {
+  opacity: 0.8; }
+#help-content div.version p.version {
+  margin-top: 0.2em; }
+#help-content div.linkdiv div.title span.status {
+  font-size: 0.83em;
+  font-weight: normal;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  color: #3f3f3f;
+  border: solid 1px #ffc0c0; }
+#help-content div.linkdiv div.title span.status-stub {
+  background-color: #fff0f0; }
+#help-content div.linkdiv div.title span.status-draft {
+  background-color: #fff0f0; }
+#help-content div.linkdiv div.title span.status-incomplete {
+  background-color: #fff0f0; }
+#help-content div.linkdiv div.title span.status-review {
+  background-color: #fffff0; }
+#help-content div.linkdiv div.desc {
+  margin-top: 0.2em;
+  color: #3f3f3f; }
+#help-content div.comment {
+  padding: 0.5em;
+  border: solid 2px #ffc0c0;
+  background-color: #fff0f0; }
+#help-content div.comment div.comment {
+  margin: 1em 1em 0 1em; }
+#help-content div.comment div.cite {
+  margin: 0 0 0.5em 0;
+  font-style: italic; }

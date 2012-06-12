@@ -1,0 +1,166 @@
+---
+layout: help
+title: Meld - Help
+---
+
+<div class="headbar"><div class="linktrails"><div class="linktrail">
+<a class="linktrail" href="index.html">Meld Help</a> › <a class="linktrail" href="index.html#folder-mode">Comparing Folders</a> » </div></div></div>
+<div class="body">
+<div class="header"><h1 class="title">Filtering out files</h1></div>
+<div class="contents">
+<p class="p">
+When you compare folders, you may want to be able to ignore some files.
+For example, you may wish to only see files that are present and different
+in both folders, ignoring those that are the same or only exist in one
+folder. Alternatively, you might want to ignore all the files in your
+<span xmlns:e="http://projectmallard.org/experimental/" class=" file">.git</span> directory, or ignore all images.
+</p>
+<p class="p">
+<span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span> has several different ways of controlling which files
+and what kind of differences you see. You can filter based on
+<span xmlns:e="http://projectmallard.org/experimental/" class=" link"><a href="#file-state-filter" title="">differences between a file across
+folders</a></span> or <span xmlns:e="http://projectmallard.org/experimental/" class=" link"><a href="#file-name-filter" title="">file and folder
+names</a></span>. You can also tell <span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span> to treat filenames
+as being <span xmlns:e="http://projectmallard.org/experimental/" class=" link"><a href="#file-case-filter" title="">case insensitive</a></span>.
+Finally, you can use <span xmlns:e="http://projectmallard.org/experimental/" class=" link"><a href="text-filters.html" title="">text filters</a></span> to
+change what both folder and file comparisons see.
+</p>
+<div class="note note-important"><div class="note-inner"><div class="note-contents"><p class="p first-child">
+  Any <span xmlns:e="http://projectmallard.org/experimental/" class=" link"><a href="text-filters.html" title="">text filters</a></span> you've defined
+  <span xmlns:e="http://projectmallard.org/experimental/" class=" em">automatically apply</span> when comparing folders. Files that are
+  identical after all of the text filters are applied are not
+  highlighted as being different, but are shown in italics.
+  </p></div></div></div>
+</div>
+<div class="section" id="file-state-filter">
+<div class="header"><h2 class="title">File differences filtering</h2></div>
+<div class="contents">
+<p class="p first-child">
+In a folder comparison, each line contains a single file or folder
+that is present in at least one of the folders being compared. Each of
+these lines is classified as being either <span xmlns:e="http://projectmallard.org/experimental/" class=" em">Modifed</span>, <span xmlns:e="http://projectmallard.org/experimental/" class=" em">New</span>
+or <span xmlns:e="http://projectmallard.org/experimental/" class=" em">Same</span>:
+</p>
+<div class="terms"><div class="terms-contents"><dl class="terms">
+<dt class="item-terms first-child">Modified</dt>
+<dd class="item-terms"><p class="p first-child">The file exists in multiple folders, but the files are different</p></dd>
+<dt class="item-terms">New</dt>
+<dd class="item-terms"><p class="p first-child">The file exists in one folder but not in the others</p></dd>
+<dt class="item-terms">Same</dt>
+<dd class="item-terms"><p class="p first-child">The file exists in all folders, and is the same everywhere</p></dd>
+</dl></div></div>
+<p class="p">
+You can change which types of differences you see in your current
+comparison by using the <span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Same</span>,
+<span xmlns:e="http://projectmallard.org/experimental/" class=" gui">New</span> and <span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Modified</span>
+buttons on the toolbar or the
+<span xmlns:e="http://projectmallard.org/experimental/" class=" guiseq"><span class=" gui">View</span> ▸ <span class=" gui">File Status</span></span>
+menu.
+</p>
+<div class="note note-tip"><div class="note-inner"><div class="note-contents"><p class="p first-child">
+  Currently, you can only filter files based on their state; folders
+  can't be filtered in this way. For example, you can't tell
+  <span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span> to ignore all folders that contain only new files. A
+  folder containing only "New" files would show up as empty, but still
+  present.
+  </p></div></div></div>
+</div>
+</div>
+<div class="section" id="file-name-filter">
+<div class="header"><h2 class="title">Filename filtering</h2></div>
+<div class="contents">
+<p class="p first-child">
+<span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span> comes with a useful set of filename filters that let you
+ignore uninteresting files and folders like common backup files and the
+metadata folders of version control systems. Each filename filter can be
+separately activated or deactivated from the
+<span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Filters</span> button on the toolbar or the
+<span xmlns:e="http://projectmallard.org/experimental/" class=" guiseq"><span class=" gui">View</span> ▸ <span class=" gui">File Filters</span></span>
+menu.
+</p>
+<p class="p">
+You can add, remove or change filename filters from the
+<span xmlns:e="http://projectmallard.org/experimental/" class=" gui">File Filters</span> section of the <span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Preferences</span>
+dialog. Filename filters specify patterns of filenames that will
+<span xmlns:e="http://projectmallard.org/experimental/" class=" em">not</span> be looked at when performing a folder comparison. Any file
+that matches an active filter won't even show up in the tree comparison.
+Filename filters match both files and folders; if a folder matches
+a filter, it and all of its contents are ignored.
+</p>
+<p class="p">
+Filename filters match according to shell glob patterns. For example,
+<span xmlns:e="http://projectmallard.org/experimental/" class=" code">*.jpg</span> will match all filenames ending in <span xmlns:e="http://projectmallard.org/experimental/" class=" code">.jpg</span>.
+The following table lists all of the shell glob characters that
+<span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span> recognises.
+</p>
+<div class="table"><table class="table" style="border-top-style: solid;border-bottom-style: solid;">
+<thead><tr>
+<td><p class="p first-child">Wildcard</p></td>
+<td><p class="p first-child">Matches</p></td>
+</tr></thead>
+<tbody>
+<tr>
+<td><p class="p first-child"><span xmlns:e="http://projectmallard.org/experimental/" class=" code">*</span></p></td>
+<td><p class="p first-child">anything (i.e., zero or more characters)</p></td>
+</tr>
+<tr>
+<td><p class="p first-child"><span xmlns:e="http://projectmallard.org/experimental/" class=" code">?</span></p></td>
+<td><p class="p first-child">exactly one character</p></td>
+</tr>
+<tr>
+<td><p class="p first-child"><span xmlns:e="http://projectmallard.org/experimental/" class=" code">[abc]</span></p></td>
+<td><p class="p first-child">any one of the listed characters</p></td>
+</tr>
+<tr>
+<td><p class="p first-child"><span xmlns:e="http://projectmallard.org/experimental/" class=" code">[!abc]</span></p></td>
+<td><p class="p first-child">anything <span xmlns:e="http://projectmallard.org/experimental/" class=" em">except</span> one of the listed characters</p></td>
+</tr>
+<tr>
+<td><p class="p first-child"><span xmlns:e="http://projectmallard.org/experimental/" class=" code">{cat,dog}</span></p></td>
+<td><p class="p first-child">either "cat" or "dog"</p></td>
+</tr>
+</tbody>
+</table></div>
+<div class="note note-tip"><div class="note-inner"><div class="note-contents">
+<p class="p first-child">
+  Changing a filter's <span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Active</span> setting in the
+  <span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Preferences</span> dialog changes whether that filter is active
+  <span xmlns:e="http://projectmallard.org/experimental/" class=" em">by default</span>.
+  </p>
+<p class="p">
+  Activating a filter from the menu or the toolbar turns the filter on
+  or off for <span xmlns:e="http://projectmallard.org/experimental/" class=" em">this comparison only</span>.
+  </p>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="file-case-filter">
+<div class="header"><h2 class="title">Case insensitive filenames</h2></div>
+<div class="contents">
+<p class="p first-child">
+Files are compared across directories according to their name. This
+comparison is case sensitive by default; that is, the files
+<span xmlns:e="http://projectmallard.org/experimental/" class=" file">README</span>, <span xmlns:e="http://projectmallard.org/experimental/" class=" file">readme</span> and <span xmlns:e="http://projectmallard.org/experimental/" class=" file">ReadMe</span> would
+all be seen as different files.
+</p>
+<p class="p">
+When comparing folders on some filesystems (e.g., HFS+ or FAT) you may
+wish to make <span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span> treat filenames as case insensitive. You
+can do this by selecting
+<span xmlns:e="http://projectmallard.org/experimental/" class=" guiseq"><span class=" gui">View</span> ▸ <span class=" gui">Ignore filename case</span></span>
+from the menus.
+</p>
+</div>
+</div>
+<div class="section autolinkssection">
+<div class="header"><h2 class="title">Further Reading</h2></div>
+<div class="autolinks">
+<div class="title"><span>More About</span></div>
+<ul><li class="autolink"><a href="index.html#folder-mode">Comparing Folders</a></li></ul>
+<div class="title"><span>See Also</span></div>
+<ul><li class="autolink"><a href="text-filters.html">Filtering out text</a></li></ul>
+</div>
+</div>
+</div>
+<div class="footbar"><div class="copyrights"><div class="copyright">© 2012 Kai Willadsen</div></div></div>
+

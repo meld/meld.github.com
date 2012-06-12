@@ -1,0 +1,193 @@
+---
+layout: help
+title: Meld - Help
+---
+
+<div class="headbar"><div class="linktrails"><div class="linktrail">
+<a class="linktrail" href="index.html">Meld Help</a> › <a class="linktrail" href="index.html#folder-mode">Comparing Folders</a> » </div></div></div>
+<div class="body">
+<div class="header"><h1 class="title">Getting started comparing folders</h1></div>
+<div class="contents">
+<p class="p">
+<span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span> lets you compare two or three folders side-by-side. You can
+start a new folder comparison by selecting the
+<span xmlns:e="http://projectmallard.org/experimental/" class=" guiseq"><span class=" gui">File</span> ▸ <span class=" gui">New...</span></span>
+menu item, and clicking on the <span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Directory Comparison</span>
+tab.
+</p>
+<p class="p">
+Your selected folders will be shown as side-by-side trees, with
+differences between files in each folder highlighted. You can copy
+or delete files from either folder, or compare individual text files
+in more detail.
+</p>
+</div>
+<div class="section" id="">
+<div class="header"><h2 class="title">The folder comparison view</h2></div>
+<div class="contents">
+<p class="p first-child">
+The main parts of a folder comparison are the trees showing the folders
+you're comparing. You can easily <span xmlns:e="http://projectmallard.org/experimental/" class=" link"><a href="#folder-navigation" title="">move
+around</a></span> these comparisons to find changes that you're interested
+in. When you select a file or folder, more detailed information is
+given in the status bar at the bottom of the window. Pressing
+<span xmlns:e="http://projectmallard.org/experimental/" class=" key">Enter</span> on a selected file, or double-clicking any file in the
+tree will open a side-by-side <span xmlns:e="http://projectmallard.org/experimental/" class=" link"><a href="file-mode.html" title="">file
+comparison</a></span> of the files in a new tab, but this will only work
+properly if they're text files!
+</p>
+<p class="p">
+There are bars on the left and right-hand sides of the window that show
+you a simple coloured summary of the comparison results. Each file or
+folder in the comparison corresponds to a small section of these bars,
+though <span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span> doesn't show <span xmlns:e="http://projectmallard.org/experimental/" class=" em">Same</span> files so that it's
+easier to see any actually important differences. You can click anywhere
+on this bar to jump straight to that place in the comparison.
+</p>
+</div>
+</div>
+<div class="section" id="folder-navigation">
+<div class="header"><h2 class="title">Navigating folder comparisons</h2></div>
+<div class="contents">
+<p class="p first-child">
+You can jump between changed files (that is, any files/folders that
+are <span xmlns:e="http://projectmallard.org/experimental/" class=" em">not</span> classified as being identical) with the
+<span xmlns:e="http://projectmallard.org/experimental/" class=" guiseq"><span class=" gui">Changes</span> ▸ <span class=" gui">Previous change</span></span>
+and
+<span xmlns:e="http://projectmallard.org/experimental/" class=" guiseq"><span class=" gui">Changes</span> ▸ <span class=" gui">Next change</span></span>
+menu items, or using the corresponding buttons on the toolbar.
+</p>
+<p class="p">
+You can use the <span xmlns:e="http://projectmallard.org/experimental/" class=" key">Left</span> and <span xmlns:e="http://projectmallard.org/experimental/" class=" key">Right</span> arrow keys to move
+between the folders you're comparing. This is useful so that you can
+select an individual file for copying or deletion.
+</p>
+</div>
+</div>
+<div class="section" id="">
+<div class="header"><h2 class="title">States in folder comparisons</h2></div>
+<div class="contents">
+<p class="p first-child">
+Each file or folder in a tree has its own <span xmlns:e="http://projectmallard.org/experimental/" class=" em">state</span>, telling you
+how it differed from its corresponding files/folders. The possible
+states are:
+</p>
+<div class="table"><table class="table" style="border-top-style: solid;border-bottom-style: solid;">
+<thead><tr>
+<td><p class="p first-child">State</p></td>
+<td><p class="p first-child">Appearance</p></td>
+<td><p class="p first-child">Meaning</p></td>
+</tr></thead>
+<tbody>
+<tr>
+<td><p class="p first-child">Same</p></td>
+<td>
+<p class="p first-child">
+        Normal font
+
+        </p>
+</td>
+<td>
+<p class="p first-child">
+        The file/folder is the same across all compared folders.
+        </p>
+</td>
+</tr>
+<tr>
+<td><p class="p first-child">Same when filtered</p></td>
+<td>
+<p class="p first-child">
+        Italics
+
+        </p>
+</td>
+<td>
+<p class="p first-child">
+        These files are different across folders, but once
+        <span xmlns:e="http://projectmallard.org/experimental/" class=" link"><a href="text-filters.html" title="">text filters</a></span> are applied, these
+        files become identical.
+        </p>
+</td>
+</tr>
+<tr>
+<td><p class="p first-child">Modified</p></td>
+<td>
+<p class="p first-child">
+        Red and bold
+
+        </p>
+</td>
+<td>
+<p class="p first-child">
+        These files differ between the folders being compared.
+        </p>
+</td>
+</tr>
+<tr>
+<td><p class="p first-child">New</p></td>
+<td>
+<p class="p first-child">
+        Green and bold
+
+        </p>
+</td>
+<td>
+<p class="p first-child">
+        This file/folder exists in this folder, but not in the others.
+        </p>
+</td>
+</tr>
+<tr>
+<td><p class="p first-child">Missing</p></td>
+<td>
+<p class="p first-child">
+        Greyed out text with a line through the middle
+
+        </p>
+</td>
+<td>
+<p class="p first-child">
+        This file/folder doesn't exist in this folder, but does in one
+        of the others.
+        </p>
+</td>
+</tr>
+<tr>
+<td><p class="p first-child">Error</p></td>
+<td>
+<p class="p first-child">
+        Bright red with a yellow background and bold
+
+        </p>
+</td>
+<td>
+<p class="p first-child">
+        When comparing this file, an error occurred. The most common
+        error causes are file permissions (i.e., <span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span> was not
+        allowed to open the file) and filename encoding errors.
+        </p>
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="p">
+You can filter out files based on these states, for example, to show only
+files that have are <span xmlns:e="http://projectmallard.org/experimental/" class=" em">Modified</span>. You can read more about this in
+<span xmlns:e="http://projectmallard.org/experimental/" class=" link"><a href="file-filters.html#file-state-filter" title="">File differences filtering</a></span>.
+</p>
+<p class="p">
+Finally, the most recently modified file/folder has an emblem
+attached to it.
+</p>
+</div>
+</div>
+<div class="section autolinkssection">
+<div class="header"><h2 class="title">Further Reading</h2></div>
+<div class="autolinks">
+<div class="title"><span>More About</span></div>
+<ul><li class="autolink"><a href="index.html#folder-mode">Comparing Folders</a></li></ul>
+</div>
+</div>
+</div>
+<div class="footbar"><div class="copyrights"><div class="copyright">© 2012 Kai Willadsen</div></div></div>
+

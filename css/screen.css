@@ -34,14 +34,14 @@ div .title {
   font-size: 96px;
   font-weight: bold;
   color: #fcaf3e;
-  text-shadow: #f57900 0.02em 0.02em 0.025em;
+  text-shadow: #db6e00 0.02em 0.02em 0.025em, #db6e00 0.00em 0.00em 0.05em;
 }
 
 h2 {
   font-family: 'Cantarell', sans-serif;
   margin-top: 20px;
   color: #fcaf3e;
-  text-shadow: #f57900 0.05em 0.05em 0.05em;
+  text-shadow: #db6e00 0.05em 0.05em 0.05em, #db6e00 0.00em 0.00em 0.1em;
 }
 
 h3 {

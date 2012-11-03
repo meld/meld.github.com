@@ -29,19 +29,19 @@ div .title {
   height: 96px;
 }
 
-.title h1 {
+h1 {
   font-family: 'Cantarell', sans-serif;
   font-size: 96px;
   font-weight: bold;
   color: #fcaf3e;
-  text-shadow: #db6e00 0.02em 0.02em 0.025em, #db6e00 0.00em 0.00em 0.05em;
+  text-shadow: #db6e00 0.02em 0.02em 0.025em, #db6e00 0 0 0.05em;
 }
 
 h2 {
   font-family: 'Cantarell', sans-serif;
   margin-top: 20px;
   color: #fcaf3e;
-  text-shadow: #db6e00 0.05em 0.05em 0.05em, #db6e00 0.00em 0.00em 0.1em;
+  text-shadow: #db6e00 0.05em 0.05em 0.05em, #db6e00 0 0 0.1em;
 }
 
 h3 {
@@ -95,6 +95,43 @@ div#footer {
 div#footer a {
   color: white;
   text-decoration: none;
+}
+
+table.download-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.download-table td {
+  padding-bottom: 20px;
+  vertical-align: middle;
+}
+
+.download span {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ce5c00;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fcaf3e;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.download a {
+  color: white;
+  text-decoration: none;
+}
+
+.download img {
+  display: inline;
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: top;
 }
 
 .news {

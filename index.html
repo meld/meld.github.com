@@ -53,45 +53,81 @@ title: Meld
 
   <div class="grid_5 alpha">
     <p>
-    Meld is packaged for just about every Linux and Unix distribution,
-    including Fedora, Ubuntu, and Suse. You should get Meld from your
-    distribution's installer unless you want the absolute latest version.
-    </p>
-    <p>
-    Meld does work on OS X and Windows, but there are no all-in-one packages
-    for those systems available at the moment. On OS X, Meld is available from
-    MacPorts or Fink. There are some notes available on
-    <a href="https://live.gnome.org/Meld/Windows">how to get Meld running on
-    Windows.</a>
-    </p>
-
-  </div>
-  <div class="grid_5 omega">
-    <div style="margin-bottom: 10px;">
-    <a href="http://ftp.gnome.org/pub/GNOME/sources/meld/1.6/meld-1.6.1.tar.xz" onClick="recordOutboundLink(this, 'Download', 'Source', 'meld-1.6.1.tar.xz'); return false;">
-    <img style="display: block; margin-left: auto; margin-right: auto; margin-top: 0" src="images/download.png" width="180" height="49"/>
-    </a>
-    <span style="display:block; text-align: center; margin-top: 10px;">
-    <a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://meldmerge.org/"></a>
-    <noscript><a href="http://flattr.com/thing/628531/Meld" target="_blank">
-    <img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>
-    </span>
-    <span style="display:block; text-align: center;">Latest release: Meld 1.6.1 (21 Oct 2012)</span>
-    </div>
-
-    <p>
     You can run Meld without installing it. Just extract the archive and run
     the <code>meld</code> file in the <code>bin</code> folder.
     </p>
+    <p>
+    Meld is packaged for most Linux/Unix distributions, including Fedora,
+    Ubuntu, and Suse. Unless you want the absolutely latest version, you should
+    install Meld through your package manager.
+    </p>
+    <p>
+    Meld works on OS X and Windows (with some caveats) but no all-in-one
+    installers are available. On OS X, you can get Meld from MacPorts or Fink.
+    For Windows, we have <a href="https://live.gnome.org/Meld/Windows">notes on
+    how to get Meld running</a>.
+    </p>
 
-    <h3>Requirements</h3>
-    <ul>
-    <li>Python 2.5</li>
-    <li>GTK+/pygtk 2.14</li>
-    <li>Glib/pygobject 2.16</li>
-    <li>GtkSourceView/pygtksourceview 2.10 (optional)</li>
-    </ul>
   </div>
+
+    <div class="grid_5 omega">
+      <div>
+        <table class="download-table">
+          <tr>
+            <td style="text-align: right; padding-right: 1em;">
+              Stable
+            </td>
+            <td class="download">
+              <a href="http://ftp.gnome.org/pub/GNOME/sources/meld/1.6/meld-1.6.1.tar.xz" onClick="recordOutboundLink(this, 'Download', 'Source', 'meld-1.6.1.tar.xz'); return false;">
+                <span>
+                  <img src="images/downloadicon.png" width="24" height="24"/>
+                  Meld 1.6.1
+                </span>
+              </a>
+            </td>
+            <td style="padding-left: 1em;">
+              21 Oct 2012
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: right; padding-right: 1em; vertical-align: middle;">
+              Devel
+            </td>
+            <td class="download">
+              <a href="http://ftp.gnome.org/pub/GNOME/sources/meld/1.7/meld-1.7.1.tar.xz" onClick="recordOutboundLink(this, 'Download', 'Source', 'meld-1.7.1.tar.xz'); return false;">
+                <span>
+                  <img src="images/downloadicon.png" width="24" height="24"/>
+                  Meld 1.7.1
+                </span>
+              </a>
+            </td>
+            <td style="padding-left: 1em; vertical-align: middle;">
+              28 Feb 2013
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <span style="display:block; text-align: center;">
+              <a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://meldmerge.org/"></a>
+              <noscript><a href="http://flattr.com/thing/628531/Meld" target="_blank">
+              <img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>
+              </span>
+            </td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+
+      <h3>Requirements</h3>
+      <ul>
+      <li>Python 2.6</li>
+      <li>GTK+/pygtk 2.14</li>
+      <li>GLib/pygobject 2.16</li>
+      <li>GtkSourceView/pygtksourceview 2.10 (optional)</li>
+      </ul>
+    </div>
+
   </div>
 
   <div class="clear"></div>

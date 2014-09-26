@@ -52,23 +52,20 @@ title: Meld
 
   <div class="grid_5 alpha">
     <p>
-    You can run Meld without installing it. Just extract the archive and run
-    the <code>meld</code> file in the <code>bin</code> folder.
-    </p>
-    <p>
     Meld is packaged for most Linux/Unix distributions, including Fedora,
     Ubuntu, and Suse. Unless you want the absolutely latest version, you should
     install Meld through your package manager.
     </p>
     <p>
-    Meld works on OS X and Windows (with some caveats). On OS X, you can get
-    Meld from MacPorts or Fink. For Windows, there is a
-    <a href="http://sourceforge.net/projects/meld-installer/">not-yet-official
-    installer</a>, or we have
-    <a href="https://wiki.gnome.org/Apps/Meld/Windows">notes on
-    how to get Meld running</a> if you want to do it yourself.
+    Meld works, with some caveats, on Windows and OS X. Windows users should
+    download the MSI, or for older releases, check out the
+    <a href="http://sourceforge.net/projects/meld-installer/">Meld installer</a>
+    project. On OS X, you can get Meld from MacPorts or Fink.
     </p>
-
+    <p>
+    You can also run Meld without installing it. Just extract the archive and
+    run <code>bin/meld</code> from the archive folder.
+    </p>
   </div>
 
     <div class="grid_5 omega">
@@ -76,20 +73,37 @@ title: Meld
         <table class="download-table">
           <tr>
             <td style="text-align: right; padding-right: 1em;">
-              Stable
+              Source:
             </td>
             <td class="download">
-              <a href="http://ftp.gnome.org/pub/GNOME/sources/meld/1.8/meld-1.8.6.tar.xz" onClick="recordOutboundLink(this, 'Download', 'Source', 'meld-1.8.6.tar.xz'); return false;">
+              <a href="https://download.gnome.org/sources/meld/3.12/meld-3.12.0.tar.xz" onClick="recordOutboundLink(this, 'Download', 'Source', 'meld-3.12.0.tar.xz'); return false;">
                 <span>
                   <img src="images/downloadicon.png" width="24" height="24"/>
-                  Meld 1.8.6
+                  Meld 3.12.0
                 </span>
               </a>
             </td>
             <td style="padding-left: 1em;">
-              19 July 2014
+              27 Sept 2014
             </td>
           </tr>
+          <tr>
+            <td style="text-align: right; padding-right: 1em;">
+              Windows:
+            </td>
+            <td class="download">
+              <a href="https://download.gnome.org/binaries/win32/meld/3.12/Meld-3.12.0-win32.msi" onClick="recordOutboundLink(this, 'Download', 'Source', 'Meld-3.12.0-win32.msi'); return false;">
+                <span>
+                  <img src="images/downloadicon.png" width="24" height="24"/>
+                  Meld 3.12.0
+                </span>
+              </a>
+            </td>
+            <td style="padding-left: 1em;">
+              27 Sept 2014
+            </td>
+          </tr>
+          <!--
           <tr>
             <td style="text-align: right; padding-right: 1em; vertical-align: middle;">
               Devel
@@ -106,6 +120,7 @@ title: Meld
               19 September 2014
             </td>
           </tr>
+          -->
           <tr>
             <td></td>
             <td>
@@ -121,14 +136,6 @@ title: Meld
       </div>
 
       <h3>Requirements</h3>
-      <p>Stable:</p>
-      <ul>
-      <li>Python 2.6</li>
-      <li>GTK+/pygtk 2.14</li>
-      <li>GLib/pygobject 2.16</li>
-      <li>GtkSourceView/pygtksourceview 2.10 (optional)</li>
-      </ul>
-      <p>Development:</p>
       <ul>
       <li>Python 2.7 (Python 3 not yet supported)</li>
       <li>GTK+ 3.6</li>

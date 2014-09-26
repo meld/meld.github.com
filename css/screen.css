@@ -108,7 +108,7 @@ table.download-table {
 }
 
 .download span {
-  padding: 5px;
+  padding: 8px;
   text-align: center;
   border: 1px solid #ce5c00;
   -webkit-border-radius: 5px;
@@ -128,7 +128,7 @@ table.download-table {
 
 .download img {
   display: inline;
-  margin-top: 0px;
+  margin-top: 2px;
   margin-left: 5px;
   margin-right: 5px;
   vertical-align: top;

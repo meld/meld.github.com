@@ -1,0 +1,54 @@
+---
+layout: help
+title: Meld - Help
+---
+
+<div class="headbar"><div class="linktrails"><div class="linktrail">
+<a class="linktrail" href="index.html">Meld Help</a> › <a class="linktrail" href="index.html#advanced">Advanced Usage</a> » </div></div></div>
+<div class="body">
+<div class="header"><h1 class="title">Meld's preferences</h1></div>
+<div class="contents">
+<div class="terms">
+<div class="title title-terms">Editor preferences</div>
+<div class="terms-contents"><dl class="terms">
+<dt class="item-terms first-child">Editor command</dt>
+<dd class="item-terms"><p class="p first-child">The name of the command to run to open text files in an external editor.
+       This may be just the command (e.g., <span class=" cmd" xmlns:e="http://projectmallard.org/experimental/">gedit</span>) in which case the
+       file to be opened will be passed as the last argument. Alternatively,
+       you can add <span class=" code" xmlns:e="http://projectmallard.org/experimental/">{file}</span> and <span class=" code" xmlns:e="http://projectmallard.org/experimental/">{line}</span> elements to the
+       command, in which case <span class=" app" xmlns:e="http://projectmallard.org/experimental/">Meld</span> will substitute the file path and
+       current line number respectively (e.g., <span class=" cmd" xmlns:e="http://projectmallard.org/experimental/">gedit {file}:{line}</span>).
+    </p></dd>
+</dl></div>
+</div>
+<div class="terms">
+<div class="title title-terms">Folder Comparison preferences</div>
+<div class="terms-contents"><dl class="terms">
+<dt class="item-terms first-child">Apply text filters during folder comparisons</dt>
+<dd class="item-terms">
+<p class="p first-child">When comparing files in folder comparison mode, text filters and other
+    text manipulation options can be applied to the contents of files. If this
+    option is enabled, all currently enabled text filters will be applied, the
+    blank line trimming option will be applied as appropriate, and differences
+    in line endings will be ignored.
+    </p>
+<p class="p">Enabling this option means that <span class=" app" xmlns:e="http://projectmallard.org/experimental/">Meld</span> must fully read all
+    non-binary files into memory during the folder comparison. With large text
+    files, this can be slow and may cause memory issues.
+    </p>
+<p class="p">This option only has an effect if "Compare files based only on size
+    and timestamp" is not enabled.
+    </p>
+</dd>
+</dl></div>
+</div>
+</div>
+<div class="section autolinkssection">
+<div class="header"><h2 class="title">Further Reading</h2></div>
+<div class="autolinks">
+<div class="title"><span>More About</span></div>
+<ul><li class="autolink"><a href="index.html#advanced">Advanced Usage</a></li></ul>
+</div>
+</div>
+</div>
+<div class="footbar"><div class="copyrights"><div class="copyright">© 2013 Kai Willadsen</div></div></div>

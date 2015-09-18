@@ -12,12 +12,12 @@ title: Meld - Help
 When comparing several files, you may have sections of text where differences
 aren't really important. For example, you may want to focus on changed sections
 of code, and ignore any changes in comment lines. With text filters you can
-tell <span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span> to ignore text that matches a pattern (i.e., a regular
+tell <span class=" app" xmlns:e="http://projectmallard.org/experimental/">Meld</span> to ignore text that matches a pattern (i.e., a regular
 expression) when showing differences between files.
 </p>
 <div class="note note-important"><div class="note-inner"><div class="note-contents"><p class="p first-child">
   Text filters don't just affect file comparisons, but also folder comparisons.
-  Check the <span xmlns:e="http://projectmallard.org/experimental/" class=" link"><a href="file-filters.html" title="">file filtering notes</a></span> for more
+  Check the <span class=" link" xmlns:e="http://projectmallard.org/experimental/"><a href="file-filters.html" title="">file filtering notes</a></span> for more
   details.
   </p></div></div></div>
 </div>
@@ -25,21 +25,21 @@ expression) when showing differences between files.
 <div class="header"><h2 class="title">Adding and using text filters</h2></div>
 <div class="contents">
 <p class="p first-child">
-You can turn text filters on or off from the the <span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Text Filters</span> tab in
-<span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Preferences</span> dialog. <span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span> comes with a few simple filters
+You can turn text filters on or off from the the <span class=" gui" xmlns:e="http://projectmallard.org/experimental/">Text Filters</span> tab in
+<span class=" gui" xmlns:e="http://projectmallard.org/experimental/">Preferences</span> dialog. <span class=" app" xmlns:e="http://projectmallard.org/experimental/">Meld</span> comes with a few simple filters
 that you might find useful, but you can add your own as well.
 </p>
 <p class="p">
-In <span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span>, text filters are regular expressions that are matched
+In <span class=" app" xmlns:e="http://projectmallard.org/experimental/">Meld</span>, text filters are regular expressions that are matched
 against the text of files you're comparing. Any text that is matched is ignored
-during the comparsion; you'll still see this text in the comparison view, but
+during the comparison; you'll still see this text in the comparison view, but
 it won't be taken into account when finding differences. Text filters are
 applied in order, so it's possible for the first filter to remove text that now
 makes the second filter match, and so on.
 </p>
 <div class="note note-tip"><div class="note-inner"><div class="note-contents"><p class="p first-child">
   If you're not familiar with regular expressions, you might want to check out
-  the Python <span xmlns:e="http://projectmallard.org/experimental/" class=" link"><a href="http://docs.python.org/howto/regex.html" title="http://docs.python.org/howto/regex.html">Regular
+  the Python <span class=" link" xmlns:e="http://projectmallard.org/experimental/"><a href="http://docs.python.org/howto/regex.html" title="http://docs.python.org/howto/regex.html">Regular
   Expression HOWTO</a></span>.
   </p></div></div></div>
 </div>
@@ -50,13 +50,13 @@ makes the second filter match, and so on.
 <p class="p first-child">
 It's easy to get text filtering wrong, and Meld's support for filtering isn't
 complete. In particular, a text filter can't change the number of lines in a
-file. For example, if we had the built-in <span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Script comment</span> filter
+file. For example, if we had the built-in <span class=" gui" xmlns:e="http://projectmallard.org/experimental/">Script comment</span> filter
 enabled, and compared the following files:
 </p>
 <div class="table"><table class="table"><tbody><tr>
 <td>
 <div class="listing first-child">
-<div class="title title-listing"><span xmlns:e="http://projectmallard.org/experimental/" class=" file">comment1.txt</span></div>
+<div class="title title-listing"><span class=" file" xmlns:e="http://projectmallard.org/experimental/">comment1.txt</span></div>
 <div class="listing-contents"><pre class="code first-child">a
 b#comment
 c
@@ -65,7 +65,7 @@ d</pre></div>
 </td>
 <td>
 <div class="listing first-child">
-<div class="title title-listing"><span xmlns:e="http://projectmallard.org/experimental/" class=" file">comment2.txt</span></div>
+<div class="title title-listing"><span class=" file" xmlns:e="http://projectmallard.org/experimental/">comment2.txt</span></div>
 <div class="listing-contents"><pre class="code first-child">a
 b
 c
@@ -74,11 +74,11 @@ c
 </td>
 </tr></tbody></table></div>
 <p class="p">
-then the lines starting with <span xmlns:e="http://projectmallard.org/experimental/" class=" code">b</span> would be shown as identical (the
-comment is stripped out) but the <span xmlns:e="http://projectmallard.org/experimental/" class=" code">d</span> line would be shown as
+then the lines starting with <span class=" code" xmlns:e="http://projectmallard.org/experimental/">b</span> would be shown as identical (the
+comment is stripped out) but the <span class=" code" xmlns:e="http://projectmallard.org/experimental/">d</span> line would be shown as
 different to the comment line on the right. This happens because the
-<span xmlns:e="http://projectmallard.org/experimental/" class=" code">#comment</span> is removed from the right-hand side, but the line itself
-can not be removed; <span xmlns:e="http://projectmallard.org/experimental/" class=" app">Meld</span> will show the <span xmlns:e="http://projectmallard.org/experimental/" class=" code">d</span> line as being
+<span class=" code" xmlns:e="http://projectmallard.org/experimental/">#comment</span> is removed from the right-hand side, but the line itself
+can not be removed; <span class=" app" xmlns:e="http://projectmallard.org/experimental/">Meld</span> will show the <span class=" code" xmlns:e="http://projectmallard.org/experimental/">d</span> line as being
 different to what it sees as a blank line on the other side.
 </p>
 </div>
@@ -87,8 +87,8 @@ different to what it sees as a blank line on the other side.
 <div class="header"><h2 class="title">Blank lines and filters</h2></div>
 <div class="contents">
 <p class="p first-child">
-The <span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Ignore changes which insert or delete blank lines</span> preference
-in the <span xmlns:e="http://projectmallard.org/experimental/" class=" gui">Text Filters</span> tab requires special explanation. If this
+The <span class=" gui" xmlns:e="http://projectmallard.org/experimental/">Ignore changes which insert or delete blank lines</span> preference
+in the <span class=" gui" xmlns:e="http://projectmallard.org/experimental/">Text Filters</span> tab requires special explanation. If this
 special filter is enabled, then any change consisting only of blank lines is
 completely ignored. This may occur because there was an actual whitespace
 change in the text, but it may also arise if your active text filters have
@@ -96,7 +96,7 @@ removed all of the other content from a change, leaving only blank lines.
 </p>
 <p class="p">
 You can use this option to get around some of the
-<span xmlns:e="http://projectmallard.org/experimental/" class=" link"><a href="#text-filter-problems" title="">problems and limitations</a></span> resulting
+<span class=" link" xmlns:e="http://projectmallard.org/experimental/"><a href="#text-filter-problems" title="">problems and limitations</a></span> resulting
 from filters not being able to remove whole lines, but it can also be useful
 in and of itself.
 </p>
@@ -113,4 +113,3 @@ in and of itself.
 </div>
 </div>
 <div class="footbar"><div class="copyrights"><div class="copyright">© 2012 Kai Willadsen</div></div></div>
-

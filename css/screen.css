@@ -119,6 +119,7 @@ table.download-table {
   font-size: 16px;
   font-weight: bold;
   color: white;
+  white-space: nowrap;
 }
 
 .download a {

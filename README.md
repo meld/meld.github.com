@@ -12,5 +12,5 @@ Indeterminate.
 The site structure was originally based on the MIT Licensed outline provided by [Tom Preston-Werner][orig].
 
 
-[meld-git]: http://git.gnome.org/browse/meld
+[meld-git]: https://gitlab.gnome.org/GNOME/meld
 [orig]: http://github.com/mojombo/jekyll

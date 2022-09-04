@@ -1,5 +1,10 @@
+**The Meld website has moved to https://gitlab.gnome.org/GNOME/meld/-/tree/pages** 
+
+**This repository is no longer used.**
+
+
 Meld website
-============
+------------
 
 The canonical Git repository for Meld is hosted on the [Gnome Git server][meld-git].
 
